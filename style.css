@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
 }
 
 html, body{
@@ -25,16 +26,33 @@ nav{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 10vh;
+    height: 9vh;
     z-index: 99;
     padding: 0vw 10vw;
 }
 nav a, i{
     font-size: 1.5vw;
     text-decoration: none;
-    color: cadetblue;
+    color: rgb(169, 88, 34);
 }
 .nav-links{
     display: flex;
     gap: 3vw;
+}
+/* header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/bg-chocolate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.header h1{
+      font-family: "Lato", sans-serif;
+      font-weight: 600;
+      color: whitesmoke;
+      font-size: 10vw;
 }
