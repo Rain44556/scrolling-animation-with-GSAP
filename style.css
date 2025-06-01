@@ -29,11 +29,12 @@ nav{
     height: 9vh;
     z-index: 99;
     padding: 0vw 10vw;
+    position: fixed;
 }
 nav a, i{
     font-size: 1.5vw;
     text-decoration: none;
-    color: rgb(169, 88, 34);
+    color: rgb(255, 248, 243);
 }
 .nav-links{
     display: flex;
@@ -54,5 +55,43 @@ nav a, i{
       font-family: "Lato", sans-serif;
       font-weight: 600;
       color: whitesmoke;
-      font-size: 10vw;
+      font-size: 20vw;
+}
+#chocolate{
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    width: 15%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#drink{
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+     transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#chocolate2{
+    position: absolute;
+    top: 68%;
+    right: 30%;
+    width: 12%;
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#chocolate3{
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    width: 25%;
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#chocolate4{
+    position: absolute;
+    top: 68%;
+    left: 3%;
+    width: 20%;
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
