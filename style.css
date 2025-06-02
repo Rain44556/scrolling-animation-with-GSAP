@@ -114,7 +114,7 @@ nav a, i{
 .left-side img{
 margin-top: 40vh;
 width: 100%;
-transform: rotate(10deg);
+transform: rotate(-25deg);
 }
 .right-side h1, p{
     color: whitesmoke;
@@ -125,4 +125,18 @@ font-size: 5vw;
 .right-side p{
 font-size: 1vw;
 width: 80%;
+}
+
+/* footer */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+#footer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
