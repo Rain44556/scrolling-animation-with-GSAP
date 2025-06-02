@@ -34,3 +34,24 @@ tl.to("#chocolate4", {
     rotate: "-30deg",
     width: "18%"
 },"chocolate")
+
+
+var tl2 = gsap.timeline({scrollTrigger:{
+    trigger: "#footer",
+    start: "0% 95%",
+    end: "20% 50%",
+    scrub: true,
+}})
+
+tl2.to("#chocolate", {
+    width: "22%",
+    left: "50%",
+    top: "235%"
+}, "drink")
+
+tl2.to("#drink", {
+    width: "30%",
+    left: "30%",
+    top: "183%",
+    rotate: "0deg"
+}, "drink")
