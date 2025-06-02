@@ -60,7 +60,7 @@ nav a, i{
 #chocolate{
     position: absolute;
     top: 8%;
-    left: 40%;
+    left: 30%;
     width: 15%;
     z-index: 1;
     transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
@@ -81,8 +81,8 @@ nav a, i{
 }
 #chocolate3{
     position: absolute;
-    top: 5%;
-    right: 25%;
+    top: 2%;
+    right: 30%;
     width: 25%;
     z-index: 3;
     transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
@@ -94,4 +94,35 @@ nav a, i{
     width: 20%;
     z-index: 3;
     transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+/* about */
+#about-section{
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(90deg, #a9774c, #864831, #402014);
+}
+.left-side, .right-side{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 50%;
+    /* height: 100%; */
+}
+.left-side img{
+margin-top: 40vh;
+width: 100%;
+transform: rotate(10deg);
+}
+.right-side h1, p{
+    color: whitesmoke;
+}
+.right-side h1{
+font-size: 5vw;
+}
+.right-side p{
+font-size: 1vw;
+width: 80%;
 }
