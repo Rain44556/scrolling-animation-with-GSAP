@@ -1,4 +1,6 @@
-var tl = gsap.timeline({scrollTrigger:{
+var tl = gsap.timeline({
+    defaults: { duration: 1, ease: "power1.inOut" },
+    scrollTrigger:{
     trigger: "#about-section",
     start: "0% 95%",
     end: "70% 50%",
@@ -6,32 +8,32 @@ var tl = gsap.timeline({scrollTrigger:{
 }})
 
 tl.to("#drink",{
-    top: "105%",
+    top: "122%",
     left: "12%",
-    rotate: "-20deg"
+    rotate: 20
 }, "chocolate")
 
 tl.to("#chocolate", {
-    top: "110%",
+    top: "126%",
     left: "25%",
 }, "chocolate")
 
 tl.to("#chocolate2", {
-    top: "160%",
+    top: "170%",
     right: "10%",
-    rotate: "-20deg",
+    rotate: -30,
 },"chocolate")
 
 tl.to("#chocolate3", {
-    top: "100%",
+    top: "110%",
     right: "10%",
-    rotate: "-30deg",
+    rotate: -50,
 },"chocolate")
 
 tl.to("#chocolate4", {
-    top: "130%",
+    top: "150%",
     right: "10%",
-    rotate: "-30deg",
+    rotate: -30,
     width: "18%"
 },"chocolate")
 
@@ -43,15 +45,22 @@ var tl2 = gsap.timeline({scrollTrigger:{
     scrub: true,
 }})
 
-tl2.to("#chocolate", {
-    width: "22%",
-    left: "50%",
-    top: "235%"
-}, "drink")
+tl2.fromTo("#chocolate",
+  { width: "15%" },
+  { width: "20%", left: "48%", top: "269%" },
+  "drink"
+)
 
 tl2.to("#drink", {
-    width: "30%",
+    width: "29%",
     left: "30%",
-    top: "183%",
-    rotate: "0deg"
+    top: "217%",
+    rotate: 0
+}, "drink")
+
+tl2.to("#chocolate2", {
+    width: "10%",
+    left: "30%",
+    top: "236%",
+    rotate: 290
 }, "drink")

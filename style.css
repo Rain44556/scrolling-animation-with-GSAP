@@ -101,6 +101,7 @@ nav a, i{
     display: flex;
     width: 100%;
     background-image: linear-gradient(90deg, #a9774c, #864831, #402014);
+/* padding: 3vw; */
 }
 .left-side, .right-side{
     display: flex;
@@ -109,10 +110,11 @@ nav a, i{
     flex-direction: column;
     gap: 2vh;
     width: 50%;
+    padding-bottom: 3vw;
     /* height: 100%; */
 }
 .left-side img{
-margin-top: 40vh;
+margin-top: 50vh;
 width: 100%;
 transform: rotate(-25deg);
 }
@@ -133,7 +135,7 @@ width: 80%;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 90vh;
+    height: 120vh;
 }
 #footer img{
     width: 100%;
